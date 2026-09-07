@@ -1,0 +1,5 @@
+{
+  "appId": "org.staymeds.patient",
+  "appName": "StayMeds Patient",
+  "webDir": "dist"
+}
