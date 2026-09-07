@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-slate-900 text-slate-900 font-sans antialiased selection:bg-teal-500 selection:text-white min-h-screen flex items-center justify-center p-0 sm:p-4;
+  }
+}
+
+/* Mobile Frame Wrapper */
+.mobile-wrapper {
+  @apply w-full max-w-md bg-slate-50 min-h-screen sm:min-h-[844px] sm:h-[844px] sm:rounded-[40px] sm:border-[8px] sm:border-slate-800 sm:shadow-2xl flex flex-col overflow-hidden relative;
+}
+
+/* Custom smooth animations */
+@keyframes pop-in {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.animate-pop-in {
+  animation: pop-in 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
