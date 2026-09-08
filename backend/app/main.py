@@ -18,6 +18,9 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "https://staymeds-app.vercel.app",
+        "https://localhost",
+        "capacitor://localhost",
+        "http://localhost",
         "http://localhost:5173",
         "http://localhost:5174",
         "http://localhost:3000",
